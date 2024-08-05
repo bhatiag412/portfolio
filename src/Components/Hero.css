@@ -1,0 +1,129 @@
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='1' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(180 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-36.8 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23500058' href='%23a' transform='rotate(-13.8 0 0) scale(0.862)'/%3E%3Cuse stroke='%2360005a' href='%23a' transform='rotate(-11.5 0 0) scale(0.885)'/%3E%3Cuse stroke='%236f005b' href='%23a' transform='rotate(-9.2 0 0) scale(0.908)'/%3E%3Cuse stroke='%237e005c' href='%23a' transform='rotate(-6.9 0 0) scale(0.931)'/%3E%3Cuse stroke='%238c005c' href='%23a' transform='rotate(-4.6 0 0) scale(0.954)'/%3E%3Cuse stroke='%239a005b' href='%23a' transform='rotate(-2.3 0 0) scale(0.977)'/%3E%3Cuse stroke='%23a80059' href='%23a' transform=''/%3E%3Cuse stroke='%23b40c57' href='%23a' transform='rotate(2.3 0 0) scale(1.023)'/%3E%3Cuse stroke='%23c01954' href='%23a' transform='rotate(4.6 0 0) scale(1.046)'/%3E%3Cuse stroke='%23cb2651' href='%23a' transform='rotate(6.9 0 0) scale(1.069)'/%3E%3Cuse stroke='%23d5324d' href='%23a' transform='rotate(9.2 0 0) scale(1.092)'/%3E%3Cuse stroke='%23df3e48' href='%23a' transform='rotate(11.5 0 0) scale(1.115)'/%3E%3Cuse stroke='%23e74a44' href='%23a' transform='rotate(13.8 0 0) scale(1.138)'/%3E%3Cuse stroke='%23ef573f' href='%23a' transform='rotate(16.1 0 0) scale(1.161)'/%3E%3Cuse stroke='%23f56439' href='%23a' transform='rotate(18.4 0 0) scale(1.184)'/%3E%3Cuse stroke='%23fa7133' href='%23a' transform='rotate(20.7 0 0) scale(1.207)'/%3E%3Cuse stroke='%23fe7e2c' href='%23a' transform='rotate(23 0 0) scale(1.23)'/%3E%3Cuse stroke='%23ff8c25' href='%23a' transform='rotate(25.3 0 0) scale(1.253)'/%3E%3Cuse stroke='%23ff991d' href='%23a' transform='rotate(27.6 0 0) scale(1.276)'/%3E%3Cuse stroke='%23ffa713' href='%23a' transform='rotate(29.9 0 0) scale(1.299)'/%3E%3Cuse stroke='%23ffb508' href='%23a' transform='rotate(32.2 0 0) scale(1.322)'/%3E%3Cuse stroke='%23ffc200' href='%23a' transform='rotate(34.5 0 0) scale(1.345)'/%3E%3Cuse stroke='%23FFD000' href='%23a' transform='rotate(36.8 0 0) scale(1.368)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: 200vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: herobg 1s  ease-in-out ;
+
+
+}
+@keyframes herobg {
+    0%{background-size: 1000vh;}
+    50%{background-size: 600vh;}
+    70%{background-size: 190vh;}
+    85%{background-size: 210vh;}
+    100%{background-size: 200vh;}
+
+
+}
+
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    /* background-color: #000; */
+    opacity: 0.8;
+  }
+
+.hero{
+    height: 100%;
+    width: 100%;
+}
+.hero .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .content{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+}
+.hero .content h1{
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+}
+.text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 15s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  } 
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10.3em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 8.3em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+.hero .content p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.content .btn{
+    margin: 1rem 0.2rem;
+}
+@media screen and (max-width:640px) {
+
+    .hero .content h1{
+    font-size: 2rem;
+    padding: 0.6rem 0 1.5rem;
+}
+.hero .content p{
+    font-size: 1.4rem;
+   
+}
+}

@@ -1,0 +1,60 @@
+.education-section {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 1.2rem 0;
+  }
+  
+  .education-entry {
+
+    /* background-color: #252525; */
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+  .education-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    
+  }
+  
+  .education-details {
+    flex: 1;
+  }
+  
+  .education-details h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .education-details h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .education-details p {
+    margin: 5px 0;
+    max-width: 80%;
+  }
+  
+  .education-details ul {
+    padding: 0rem 1.1rem;
+   
+  }
+  
+  .education-section  hr {
+    border: 0;
+    height: 1px;
+    background-color: #444;
+    margin: 20px 0;
+  }
+  
