@@ -8,10 +8,35 @@
     height: 90px;
     z-index: 10;
 }
+.imgdiv{
+
+}
 .header img{
     width: 9rem;
 cursor: pointer;
 
+animation: opening 2s cubic-bezier(0, 0, 0.27, 0.95);
+position: static;
+}
+@keyframes opening {
+    0%{
+        position: absolute;
+        top: 40vh;
+        left: 35vw;
+    }
+    /* 50%{
+        top: 20vh;
+        left: 15vw;
+    }
+    75%{
+        top: 10vh;
+        left: 5vw;
+    } */
+    100%{
+        top: 0vh;
+        left: 0vw;
+    }
+    
 }
 .header-bg{
     background-color: rgba(0,0,0,0.85);
@@ -42,7 +67,7 @@ cursor: pointer;
         background: rgba(0,0,0,0.9);
         position: absolute;
         top:0;
-        left: -100%;
+        left: -110%;
         z-index: -3;
         transition: 0.3s;
     }

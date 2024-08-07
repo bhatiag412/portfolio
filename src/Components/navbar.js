@@ -27,7 +27,7 @@ function Navbar({ scrollToHero, scrollToWork, scrollToExperience, scrollToEducat
 
     return (
         <div className={color ? "header header-bg" : 'header'}>
-            <div onClick={() => handleLinkClick(scrollToHero)}>
+            <div className="imgdiv" onClick={() => handleLinkClick(scrollToHero)}>
                 <img alt="Portfolio" src={logo} />
             </div>
             <ul className={click ? "navmenu active" : "navmenu"}>
