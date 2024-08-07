@@ -14,30 +14,48 @@
 .header img{
     width: 11rem;
 cursor: pointer;
-
-animation: opening .7s linear ;
 position: absolute;
-/* position: static; */
 top: 0vh;
 left: 0vw;
+animation: opening1 .9s linear;
 }
 @keyframes opening {
     0%{
-        top: 50vh;
-        left: 35vw;
+        top: 40vh;
+        left: 25vw;
     }
-    /* 50%{
-        top: 25vh;
-        left: 20vw;
-    }
+    30%{
+        top: 40vh;
+        left: 25vw;
+        }
+        /* 
    
     75%{
         top: 15vh;
         left: 10vw;
     } */
     100%{
-        top: 1vh;
-        left: 1vw;
+        top: 0vh;
+        left: 0vw;
+    }
+    
+}
+@keyframes opening1 {
+    0%{
+       
+        width: 100vw;
+    }
+    30%{
+        width: 100vw;
+        }
+        /* 
+   
+    75%{
+        top: 15vh;
+        left: 10vw;
+    } */
+    100%{
+        width: 11rem;
     }
     
 }
@@ -86,5 +104,9 @@ left: 0vw;
     }
     .hamburger{
         display: initial;
+    }
+    .header img{
+        width: 11rem;
+        animation: opening .9s linear ;
     }
 }

@@ -31,7 +31,7 @@
     top:0;
     /* background-color: #000; */
     opacity: 0.8;
-    animation: herobg1 .9s linear;
+    animation: herobg1 1.5s linear;
   }
 
 .hero{
@@ -43,6 +43,9 @@
 @keyframes herobg1 {
   0%{
     filter: brightness(0%);
+  }
+  30%{
+    filter: brightness(10%);
   }
   100%{
    filter: brightness(100%);
@@ -60,7 +63,7 @@
     left: 50%;
     text-align: center;
     color: #fff;
-    animation: herobg1 1s linear;
+    animation: herobg1 1.5s linear;
 }
 .hero .content h1{
     font-size: 4rem;
