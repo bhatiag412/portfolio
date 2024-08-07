@@ -21,7 +21,7 @@ position: static;
 @keyframes opening {
     0%{
         position: absolute;
-        top: 40vh;
+        top: 50vh;
         left: 35vw;
     }
     /* 50%{
