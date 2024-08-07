@@ -15,26 +15,29 @@
     width: 11rem;
 cursor: pointer;
 
-animation: opening 2s cubic-bezier(0, 0, 0.27, 0.95);
-position: static;
+animation: opening .7s linear ;
+position: absolute;
+/* position: static; */
+top: 0vh;
+left: 0vw;
 }
 @keyframes opening {
     0%{
-        position: absolute;
         top: 50vh;
         left: 35vw;
     }
     /* 50%{
-        top: 20vh;
-        left: 15vw;
+        top: 25vh;
+        left: 20vw;
     }
+   
     75%{
-        top: 10vh;
-        left: 5vw;
+        top: 15vh;
+        left: 10vw;
     } */
     100%{
-        top: 0vh;
-        left: 0vw;
+        top: 1vh;
+        left: 1vw;
     }
     
 }
